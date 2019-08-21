@@ -1,16 +1,16 @@
 body {background-color: black; color: #e0e0eb}
 
 #container {
+    top: 30px; 
     position: relative;
  }
 
- #image {
+ #image {  
     opacity: 0.80;
     filter: alpha(opacity=80); /* For <= IE8 */
  }
 
 #bottom-left {
-    z-index: 100;
     position: absolute;
     text-shadow: 4px 4px 8px #000000;
     font-family: Arial, sans-serif; 
@@ -27,7 +27,7 @@ ul {
     overflow: hidden; 
     background-color: black;
     position: fixed; 
-    bottom: 0; 
+    top: 0; 
     Width: 100%;
  }
 
