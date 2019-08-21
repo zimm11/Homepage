@@ -1,11 +1,19 @@
-body {background-color: black; color: #ccffeb}
+html {height: 100%}
+
+body {
+    background-color: black;
+    color: #ccffeb;
+    height: 100%; 
+}
 
 #container {
+    height: 100%; 
     top: 50px; 
     position: relative;
  }
 
  #image {  
+    height: 100%; 
     opacity: 0.80;
     filter: alpha(opacity=80); /* For <= IE8 */
  }
@@ -17,7 +25,7 @@ body {background-color: black; color: #ccffeb}
     font-family: Arial, sans-serif; 
     font-size: 36px;
     font-weight: bold;
-    bottom: 30px;
+    bottom: 50px;
     left: 50px;
 }
 
