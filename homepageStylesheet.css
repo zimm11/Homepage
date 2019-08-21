@@ -1,7 +1,7 @@
-body {background-color: black; color: #e0e0eb}
+body {background-color: black; color: #ccffeb}
 
 #container {
-    top: 30px; 
+    top: 50px; 
     position: relative;
  }
 
@@ -12,12 +12,21 @@ body {background-color: black; color: #e0e0eb}
 
 #bottom-left {
     position: absolute;
+    color: #ccffeb;
     text-shadow: 4px 4px 8px #000000;
     font-family: Arial, sans-serif; 
     font-size: 36px;
     font-weight: bold;
     bottom: 30px;
     left: 50px;
+}
+
+#about-me {
+    padding: 100px 50px 100px 50px;
+}
+
+p {
+    color: #e0e0eb;
 }
 
 ul {
@@ -45,7 +54,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #e0e0eb;
-    color: black; 
+    background-color: gray;
+    color: #ccffeb; 
 }
 
