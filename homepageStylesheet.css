@@ -1,52 +1,65 @@
 html {height: 100%}
 
 body {
-    background-color: black;
-    color: #ccffeb;
+    background-color: #ecf2f8;
     height: 100%; 
+    font-family: Courier New, monospace;
+    Margin: 0; 
 }
 
 #container {
-    height: 100%; 
-    top: 50px; 
+    top: 15%; 
     position: relative;
- }
-
- #image {  
     height: 100%; 
-    opacity: 0.80;
-    filter: alpha(opacity=80); /* For <= IE8 */
- }
-
-#bottom-left {
-    position: absolute;
-    color: #ccffeb;
-    text-shadow: 4px 4px 8px #000000;
-    font-family: Arial, sans-serif; 
-    font-size: 36px;
-    font-weight: bold;
-    bottom: 50px;
-    left: 50px;
+    width: 100%;
 }
 
-#about-me {
+ #image {   
+    padding: 0px 0px 0px 0px;  
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+    border-radius: 50%;
+    border: 10px solid #00e6b8;
+}
+
+#greeting {
+    text-align: center; 
+    font-family: Didot, serif;
+    font-size: 36px;
+    font-weight: bold;
     padding: 100px 50px 100px 50px;
 }
 
-p {
-    color: #e0e0eb;
+#about-me {
+    background-color: #00e6b8; 
+    padding: 5px 50px 20px 50px;
+    border-radius: 100px;
+}
+
+#abt-me { 
+    color: white; 
+    font-size: 36px;
+}
+
+p { 
+    font-size: 24px;
+    color: black;
 }
 
 ul {
+    background-color: pink;
     list-style-type: none;
     margin: 0;
-    padding: 40;
     overflow: hidden; 
-    background-color: black;
     position: fixed; 
+    vertical-align: middle; 
+    z-index: 1; 
     top: 0; 
     Width: 100%;
- }
+
+}
 
 li {
     float: left;
@@ -54,7 +67,7 @@ li {
 
 li a {
     display: block; 
-    color: #e0e0eb;
+    color: black; 
     font-size: 20px;
     text-align: center; 
     padding: 10px 16px; 
@@ -62,7 +75,13 @@ li a {
 }
 
 li a:hover {
-    background-color: gray;
-    color: #ccffeb; 
+    background-color: #00cca3;
+    color: white; 
 }
+
+@media screen and (max-width: 600px){
+    ul li.right, 
+    ul li {float: none;}
+}
+
 
