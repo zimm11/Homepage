@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-    top: 15%;
+    top: 10%;
     position: relative;
     height: 100%; 
     width: 100%;
@@ -20,7 +20,7 @@ body {
     margin-right: auto; 
     width: 50%;
     border-radius: 50%;
-    border: 10px solid #00e6b8;
+    border: 5px solid #00e6b8;
 }
 
 #greeting {
@@ -28,7 +28,7 @@ body {
     font-family: Didot, serif;
     font-size: 36px;
     font-weight: bold;
-    padding: 100px 50px 100px 50px;
+    padding: 50px 50px 0px 50px;
 }
 
 #about-me {
@@ -47,30 +47,38 @@ p {
     color: black;
 }
 
+/* work in progress
+#square1 { 
+    background: pink; 
+    width: 50%;
+    height: 30%; 
+    margin: 50px 50px; 
+}
+
+#square2 { 
+    background:green; 
+    display: inline-bloack; 
+    width: 50%;
+    height: 30%; 
+    margin: 50px 50px; 
+}    
+*/
+
+.navBar {
+    width: 100%;
+    background: pink;
+}
+
 ul {
-    background-color: pink;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden; 
-    position: fixed; 
-    vertical-align: middle; 
-    z-index: 1; 
-    top: 0; 
-    Width: 100%;
-
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0; 
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block; 
-    color: black; 
-    font-size: 20px;
-    text-align: center; 
-    padding: 10px 16px; 
-    text-decoration: none; 
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
 }
 
 li a:hover {
@@ -78,10 +86,45 @@ li a:hover {
     color: white; 
 }
 
-@media screen and (max-width: 600px){
-    ul li.right, 
-	ul li {float: none;}
-    #container{margin-top: 60%;}
+li a {
+    display: block; 
+    color: black; 
+    font-size: 20px;
+    text-align: center; 
+    padding: 1vw;
+    text-decoration: none; 
+} 
+
+button {
+    width: 100%;
+    padding: 5px 20px; 
+    background: pink; 
+    text-align: right;
+    box-sizing: border-box;
+    color: black; 
+    border: none; 
+    font-family: Courier New, monospace;
+    font-size: 30px; 
+    display: none; 
+    outline: none; 
+}
+
+@media only screen and (max-width: 800px) {
+    button {
+        display: block; 
+    }
+    ul { 
+        width: 100%; 
+        display: none; 
+    }
+    ul li { 
+        display: block; 
+        text-align: center; 
+        padding: 0; 
+    }
+    .active {
+        display: block; 
+    }
 }
 
 
