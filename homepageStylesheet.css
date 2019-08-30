@@ -1,7 +1,8 @@
 html {height: 100%}
 
 body {
-    background-color: #ecf2f8;
+    /*background-color: #00e6b8; */
+    background-color: #b3ffda;
     height: 100%; 
     font-family: Courier New, monospace;
     Margin: 0; 
@@ -12,6 +13,7 @@ body {
     position: relative;
     height: 100%; 
     width: 100%;
+
 }
 
  #image {   
@@ -20,25 +22,32 @@ body {
     margin-right: auto; 
     width: 50%;
     border-radius: 50%;
-    border: 5px solid #00e6b8;
+    border: 5px solid white;
 }
 
 #greeting {
     text-align: center; 
-    font-family: Didot, serif;
+    font-family: Courier New, monospace;
+    /*font-family: Didot, serif; */
     font-size: 36px;
     font-weight: bold;
-    padding: 50px 50px 0px 50px;
+    padding: 25px 0px 25px 0px;
+    color: black; 
+    text-shadow: 2px 2px white; 
+
+
 }
 
 #about-me {
-    background-color: #00e6b8; 
+    background-color: white; 
     padding: 5px 50px 20px 50px;
     border-radius: 100px;
+    margin: 0px 50px 100px 50px;
+
 }
 
 #abt-me { 
-    color: white; 
+    color: black; 
     font-size: 36px;
 }
 
@@ -47,26 +56,10 @@ p {
     color: black;
 }
 
-/* work in progress
-#square1 { 
-    background: pink; 
-    width: 50%;
-    height: 30%; 
-    margin: 50px 50px; 
-}
-
-#square2 { 
-    background:green; 
-    display: inline-bloack; 
-    width: 50%;
-    height: 30%; 
-    margin: 50px 50px; 
-}    
-*/
-
 .navBar {
     width: 100%;
     background: pink;
+    border-bottom: 5px solid white;
 }
 
 ul {
