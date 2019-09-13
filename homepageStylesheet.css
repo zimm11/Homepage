@@ -1,71 +1,70 @@
-html {height: 100%}
+html, body {
+  margin: 0;
+}
 
 body {
-    /*background-color: #00e6b8; */
-    background-color: #b3ffda;
-    height: 100%; 
+    background: url("triangles4.jpg");
+    background-size: cover;
     font-family: Courier New, monospace;
-    Margin: 0; 
 }
 
 #container {
-    top: 10%;
+    margin-top: 5%;
     position: relative;
-    height: 100%; 
+    height: 100%;
     width: 100%;
-
 }
 
- #image {   
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 50%;
+ #image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #3d5c5c;
 }
 
 #greeting {
-    text-align: center; 
+    text-align: center;
     font-family: Courier New, monospace;
-    /*font-family: Didot, serif; */
     font-size: 36px;
     font-weight: bold;
     padding: 2% 0 2% 0;
-    color: black; 
-    text-shadow: 2px 2px white; 
-
-
+    color: black;
+    text-shadow: 2px 2px white;
 }
 
 #about-me {
-    background-color: white; 
+    display: none;
+    background-color: white;
+    opacity: .8;
     padding: 5px 50px 20px 50px;
     border-radius: 100px;
-    margin: 20% 10% 10% 10%;
-
+    margin: 3% 10% 10% 10%;
 }
 
-#abt-me { 
-    color: black; 
+#abt-me {
+    color: black;
     font-size: 36px;
 }
 
-p { 
+p {
     font-size: 24px;
     color: black;
 }
 
 .navBar {
     width: 100%;
-    background: pink;
+    background: #3d5c5c;
     border-bottom: 5px solid white;
+    text-align: center;
 }
 
 ul {
     width: 100%;
-    margin: 0 auto; 
-    padding: 0; 
+    margin: 0 auto;
+    padding: 0;
 }
 
 ul li {
@@ -75,52 +74,60 @@ ul li {
 }
 
 li a:hover {
-    background-color: #00cca3;
-    color: white; 
+    background-color: #a0dec0;
+    text-shadow: 1px 1px white;
+    color: black;
 }
 
 li a {
-    display: block; 
-    color: black; 
+    text-align: center;
+    display: block;
+    color: white;
+    text-shadow: 1px 1px black;
     font-size: 20px;
-    text-align: center; 
-    padding: 1vw;
-    text-decoration: none; 
-} 
+    padding: 5px;
+    text-decoration: none;
+}
 
-button {
+#menu {
     width: 100%;
-    padding: 5px 20px; 
-    background: pink; 
+    padding: 5px 20px;
+    background: #3d5c5c;
     text-align: right;
     box-sizing: border-box;
-    color: black; 
-    border: none; 
+    color: white;
+    border: none;
     font-family: Courier New, monospace;
-    font-size: 30px; 
-    display: none; 
-    outline: none; 
+    font-size: 30px;
+    display: none;
+    outline: none;
 }
 
 @media only screen and (max-width: 800px) {
-    button {
-        display: block; 
+    #menu {
+        display: block;
     }
-    ul { 
-        width: 100%; 
-        display: none; 
+    ul {
+        width: 100%;
+        display: none;
     }
-    ul li { 
-        display: block; 
-        text-align: center; 
-        padding: 0; 
+    ul li {
+        display: block;
+        text-align: center;
+        padding: 0;
     }
     .active {
-        display: block; 
+        display: block;
+    }
+    #container {
+      margin-top: 25%;
     }
     #about-me {
-        margin: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #image {
+        width: 75%;
     }
 }
-
-

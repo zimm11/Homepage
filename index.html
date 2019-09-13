@@ -4,39 +4,40 @@
     <head>
         <title>Chris Zimmerman</title>
         <meta charset = "UTF-8">
+        <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" type="text/css" href="homepageStylesheet.css">
-        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>    
+        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src = "typed.js"></script>
         <script src = "formatting.js"></script>
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="typeWriter()">
         <nav class = "navBar">
-            <button> Menu ☰ </button>
+            <button id="menu"> Menu ☰ </button>
             <ul>
-                <li><a href="index.html" class = "current">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="https://drive.google.com/file/d/1QGW8FNCn0vlEIgjIKJKThdJ7oEfKXw92/view?usp=sharing/export?format=pdf">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/christopher-zimmerman-08b096a9/">LinkedIn</a></li>
-                <li><a href="https://github.com/zimm11">GitHub</a></li>
-                <li><a href="placeholder.html">Photography</a></li>
-                <li><a href="placeholder.html">My Dog Pax</a></li>
-                <li><a href="mailto:cdzimm118@gmail.com">Contact Me</a></li>
+                <li id="show"><a><i class="fa fa-home"></i> Home</a></li>
+                <li id="hide"><a><i class="fa fa-address-card"></i> About Me</a></li>
+                <li><a href="https://drive.google.com/file/d/1QGW8FNCn0vlEIgjIKJKThdJ7oEfKXw92/view?usp=sharing/export?format=pdf"><i class="fa fa-file"></i> Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/christopher-zimmerman-08b096a9/"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/zimm11"><i class="fa fa-github"></i> GitHub</a></li>
+                <li><a href="placeholder.html"><i class="fa fa-camera-retro"></i> Photography</a></li>
+                <li><a href="placeholder.html"><i class="fa fa-paw"></i> My Dog Pax</a></li>
+                <li><a href="mailto:cdzimm118@gmail.com"><i class="fa fa-envelope"></i> Contact Me</a></li>
             </ul>
-        </nav>    
-        </div>
+        </nav>
         <div id="container">
             <img id="image" src="Portrait.jpeg" alt="portrait">
-            <p id = "greeting">Hello there, I'm Chris. Nice to meet you.</p>
-        </div>  
+            <p id="greeting"><!--</p> Hello there, I'm Chris. Nice to meet you.</p>-->
+        </div>
         <div id="about-me">
             <p id="abt-me">About Me</p>
-            <p>My name is Chris - I am a current Computer Information Systems Student at Buffalo State College. 
+            <p>My name is Chris - I am a current Computer Information Systems Student at Buffalo State College.
             This fall 2019 is my first semester back in school, I had previously graduated from SUNY Brockport with a B.S.
-            degree having studied History and Political Science.  The past four years I have worked in the insurance industry 
+            degree having studied History and Political Science.  The past four years I have worked in the insurance industry
             holding positions as a Commercial Insurance Account Manager, Commercial Underwriter, and as a Claims Adjuster.
-            I have always had an interest in all things tech and computers and after taking some lessons online and an Intro to CS 
+            I have always had an interest in all things tech and computers and after taking some lessons online and an Intro to CS
             Java course at CC I have decided to go all-in to pusue further education with aspriations of becoming a Software Developer.
-            I am currently on the hunt for interships for summer 2020 if you know of any good leads!  
+            I am currently on the hunt for interships for summer 2020 if you know of any good leads!
             </p>
             <p>
             Of the many things I like to do in my free time my top hobbies are taking my dog Pax on walks, photography (I took the photo above!)
