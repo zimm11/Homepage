@@ -1,4 +1,5 @@
 html, body {
+  height: 100%;
   margin: 0;
 }
 
@@ -120,7 +121,7 @@ li a {
         display: block;
     }
     #container {
-      margin-top: 25%;
+      margin-top: 20%;
     }
     #about-me {
         margin-top: 20px;
