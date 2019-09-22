@@ -1,49 +1,66 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <title>Chris Zimmerman</title>
-        <meta charset = "UTF-8">
-        <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel = "stylesheet" type="text/css" href="homepageStylesheet.css">
-        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src = "typed.js"></script>
-        <script src = "formatting.js"></script>
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body onload="typeWriter()">
-        <nav class = "navBar">
-            <button id="menu"> Menu ☰ </button>
-            <ul>
-                <li id="show"><a><i class="fa fa-home"></i> Home</a></li>
-                <li id="hide"><a><i class="fa fa-address-card"></i> About Me</a></li>
-                <li><a href="https://www.linkedin.com/in/christopher-zimmerman-08b096a9/"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/zimm11"><i class="fa fa-github"></i> GitHub</a></li>
-                <li><a href="https://drive.google.com/file/d/1QGW8FNCn0vlEIgjIKJKThdJ7oEfKXw92/view?usp=sharing/export?format=pdf"><i class="fa fa-file"></i> Resume</a></li>
-                <li><a href="placeholder.html"><i class="fa fa-camera-retro"></i> Photography</a></li>
-                <li><a href="placeholder.html"><i class="fa fa-paw"></i> My Dog Pax</a></li>
-                <li><a href="mailto:cdzimm118@gmail.com"><i class="fa fa-envelope"></i> Contact Me</a></li>
-            </ul>
-        </nav>
-        <div id="container">
-            <img id="image" src="Portrait.jpeg" alt="portrait">
-            <p id="greeting"><!--</p> Hello there, I'm Chris. Nice to meet you.</p>-->
-        </div>
-        <div id="about-me">
-            <p id="abt-me">About Me</p>
-            <p>My name is Chris - I am a current Computer Information Systems Student at Buffalo State College.
-            This fall 2019 is my first semester back in school, I had previously graduated from SUNY Brockport with a B.S.
-            degree having studied History and Political Science.  The past four years I have worked in the insurance industry
-            holding positions as a Commercial Insurance Account Manager, Commercial Underwriter, and as a Claims Adjuster.
-            I have always had an interest in all things tech and computers and after taking some lessons online and an Intro to CS
-            Java course at CC I have decided to go all-in to pusue further education with aspriations of becoming a Software Developer.
-            I am currently on the hunt for interships for summer 2020 if you know of any good leads!
-            </p>
-            <p>
-            Of the many things I like to do in my free time my top hobbies are taking my dog Pax on walks, photography (I took the photo above!)
-            and watching a good TV series.  Click below to learn more about me professionally and personally and please feel
-            free to contact me so I can learn more about you as well!
-            </p>
-        </div>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Chris Zimmerman</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS Style Sheet and JavaScript -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
 
-    </body>
+  <body>
+    <!-- Top header photo -->
+    <div class="container-fluid" id="banner">
+      <img src="banner.jpeg" class="img-fluid" alt="Banner photo of Badlands National Park">
+    </div>
+    <!-- Navigation bar, set to top sticky -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>  Chris Zimmerman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/christopher-zimmerman-08b096a9/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a class="nav-item nav-link" href="https://github.com/zimm11"><i class="fa fa-github"></i> GitHub</a>
+          <a class="nav-item nav-link" href="https://drive.google.com/file/d/1QGW8FNCn0vlEIgjIKJKThdJ7oEfKXw92/view?usp=sharing/export?format=pdf"><i class="fa fa-file"></i> Resume</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-camera-retro"></i> Photography</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-paw"></i> My Dog Pax</a>
+          <a class="nav-item nav-link" href="mailto:cdzimm118@gmail.com"><i class="fa fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Greeting and about me container, set to 4 and 8 columns -->
+    <div class="container">
+      <div class="row mx-md-n5">
+        <div class="col-lg-4 py-5 px-md-5 align-self-center shadow p-3 mb-5 bg-white rounded" id="greeting">
+          <p><img src="Portrait.jpeg" id="portrait" class="img-fluid" alt="portrait"></p>
+          <p>Hi, I'm Chris. Nice to meet you!</p>
+        </div>
+        <div class="col-lg-8 py-5 px-md-5" id="about-me">
+          <p id="me">About Me</p>
+          <p>My name is Chris - I am a current Computer Information Systems Student at Buffalo State College.
+          This fall 2019 is my first semester back in school, I had previously graduated from SUNY Brockport with a B.S.
+          degree having studied History and Political Science.  The past four years I have worked in the insurance industry
+          holding positions as a Commercial Insurance Account Manager, Commercial Underwriter, and as a Claims Adjuster.
+          I have always had an interest in all things tech and computers and after taking some lessons online and an Intro to CS
+          Java course at CC I have decided to go all-in to pusue further education with aspriations of becoming a Software Developer.
+          I am currently on the hunt for interships for summer 2020 if you know of any good leads!
+          </p>
+          <p>
+          Of the many things I like to do in my free time my top hobbies are taking my dog Pax on walks, photography (I took the photo above!)
+          and watching a good TV series.  Click below to learn more about me professionally and personally and please feel
+          free to contact me so I can learn more about you as well!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

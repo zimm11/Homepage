@@ -1,0 +1,42 @@
+#banner {
+    padding: 0;
+}
+
+.container {
+    /*text-align: center;*/
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar {
+    font-family: Courier New, monospace;
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+}
+
+#about-me {
+  background-color: white;
+  border-radius: 10%;
+  opacity: .70;
+}
+
+#greeting {
+    text-align: center;
+    font-size: 36px;
+}
+
+#portrait {
+    border-radius: 10%;
+}
+
+#me {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+    #portrait {
+      width: 50%;
+    }
+}
