@@ -33,7 +33,7 @@
         </div>
       </div>
     </nav>
-    <!-- Container with thumbnails of my photography -->
+    <!-- Container with thumbnails of my photography, full size photos are opened in modal using JS script-->
     <div class="container" id="photo-title">
       <h1 id="photo">My Photography</h1>
       <p>(Click on photos to enlarge)</p>
@@ -42,17 +42,26 @@
       <div class="row">
         <div class="col-lg">
           <a href="#" class="open">
-            <img src="images/ZIM_0134.jpeg" alt="Glacier National Park 1" class="img-thumbnail">
+            <picture>
+        			<source srcset="images/glacier-small-1.jpeg">
+              <img src="images/glacier-1.jpeg" alt="Glacier National Park 1" class="img-thumbnail">
+            </picture>
           </a>
         </div>
         <div class="col-lg">
           <a href="#" class="open">
-            <img src="images/ZIM_0012.jpg" alt="Glacier National Park 2" class="img-thumbnail">
+            <picture>
+        			<source srcset="images/glacier-small-2.jpeg">
+              <img src="images/glacier-2.jpeg" alt="Glacier National Park 2" class="img-thumbnail">
+            </picture>
           </a>
         </div>
         <div class="col-lg">
           <a href="#" class="open">
-            <img src="images/ZIM_0221.jpeg" alt="Glacier National Park 3" class="img-thumbnail">
+            <picture>
+        			<source srcset="images/glacier-small-3.jpeg">
+              <img src="images/glacier-3.jpeg" alt="Glacier National Park 3" class="img-thumbnail">
+            </picture>
           </a>
         </div>
       </div>
@@ -60,36 +69,26 @@
         <div class="row">
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/ZIM_0492.jpeg" alt="Badlands National Park 1" class="img-thumbnail">
+              <picture>
+          			<source srcset="images/badlands-small-1.jpeg">
+                <img src="images/badlands-1.jpeg" alt="Badlands National Park 1" class="img-thumbnail">
+              </picture>
             </a>
           </div>
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/ZIM_0478.jpeg" alt="Badlands National Park 2" class="img-thumbnail">
+              <picture>
+          			<source srcset="images/badlands-small-2.jpeg">
+                <img src="images/badlands-2.jpeg" alt="Badlands National Park 2" class="img-thumbnail">
+              </picture>
             </a>
           </div>
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/ZIM_0499.jpeg" alt="Badlands National Park 3" class="img-thumbnail">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <a href="#" class="open">
-              <img src="images/ZIM_0016.jpg" alt="Highland Park photo of flower 1" class="img-thumbnail">
-            <a href="#" class="open">
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <img src="images/ZIM_0079.jpeg" alt="Highland Park photo of flower 2" class="img-thumbnail">
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <img src="images/ZIM_0035.jpeg" alt="Highland Park photo of flower 2" class="img-thumbnail">
+              <picture>
+          			<source srcset="images/badlands-small-3.jpeg">
+                <img src="images/badlands-3.jpeg" alt="Badlands National Park 3" class="img-thumbnail">
+              </picture>
             </a>
           </div>
         </div>
@@ -98,17 +97,54 @@
         <div class="row">
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/DSC_0230.jpeg" alt="Picture of waterfall at Letchworth State Park" class="img-thumbnail">
+              <picture>
+                <source srcset="images/highland-small-1.jpeg">
+                <img src="images/highland-1.jpeg" alt="Highland Park photo of flower 1" class="img-thumbnail">
+              </picture>
             </a>
           </div>
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/DSC_0241.jpeg" alt="Picture of my dog Pax" class="img-thumbnail">
+              <picture>
+                <source srcset="images/highland-small-2.jpeg">
+                <img src="images/highland-2.jpeg" alt="Highland Park photo of flower 2" class="img-thumbnail">
+              </picture>
             </a>
           </div>
           <div class="col-lg">
             <a href="#" class="open">
-              <img src="images/ZIM_0023.jpg" alt="Picture of Cole our family dog" class="img-thumbnail">
+              <picture>
+                <source srcset="images/highland-small-3.jpeg">
+                <img src="images/highland-3.jpeg" alt="Highland Park photo of flower 3" class="img-thumbnail">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <a href="#" class="open">
+              <picture>
+                <source srcset="images/letchworth-small-1.jpeg">
+                <img src="images/letchworth-1.jpeg" alt="Picture of waterfall at Letchworth State Park" class="img-thumbnail">
+              </picture>
+            </a>
+          </div>
+          <div class="col-lg">
+            <a href="#" class="open">
+              <picture>
+          			<source srcset="images/pax-small-1.jpeg">
+          			<img src="images/pax-1.jpeg" alt="Photo of my dog Pax" class="img-thumbnail">
+          		</picture>
+            </a>
+          </div>
+          <div class="col-lg">
+            <a href="#" class="open">
+              <picture>
+          			<source srcset="images/cole-small-1.jpeg">
+          			<img src="images/cole-1.jpeg" alt="Photo of our family dog Cole" class="img-thumbnail">
+          		</picture>
             </a>
           </div>
         </div>
