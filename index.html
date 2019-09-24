@@ -15,24 +15,27 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="typed.js"></script>
   </head>
 
-  <body>
-    <!-- Top header photo -->
+  <body onload="typeWriter()">  <!-- Execute typed.js on page load -->
+    <!-- Top header photo, click to direct to photography galler page -->
     <div class="container-fluid" id="banner">
-      <img src="banner.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Badlands National Park">
+      <a href="photography.html">
+        <img src="paris3.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Badlands National Park">
+      </a>
     </div>
     <!-- Navigation bar, set to top sticky -->
     <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>  Chris Zimmerman</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">CZ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav mx-auto">
           <a class="nav-item nav-link" href="https://www.linkedin.com/in/christopher-zimmerman-08b096a9/"><i class="fa fa-linkedin"></i> LinkedIn</a>
           <a class="nav-item nav-link" href="https://github.com/zimm11"><i class="fa fa-github"></i> GitHub</a>
-          <a class="nav-item nav-link" href="https://drive.google.com/file/d/1QGW8FNCn0vlEIgjIKJKThdJ7oEfKXw92/view?usp=sharing/export?format=pdf"><i class="fa fa-file"></i> Resume</a>
+          <a class="nav-item nav-link" href="https://drive.google.com/file/d/1kMhO8dZJehPiaElqH8m5M9GgwZ0rfHpU/view?usp=sharing"><i class="fa fa-file"></i> Resume</a>
           <a class="nav-item nav-link" href="photography.html"><i class="fa fa-camera-retro"></i> Photography</a>
           <!-- <a class="nav-item nav-link" href="#"><i class="fa fa-paw"></i> My Dog Pax</a> "Work in Progress"-->
           <a class="nav-item nav-link" href="mailto:cdzimm118@gmail.com"><i class="fa fa-envelope"></i> Contact Me</a>
@@ -42,9 +45,9 @@
     <!-- Greeting and about me container, set to 4 and 8 columns -->
     <div class="container" id="main-container">
       <div class="row">
-        <div class="col-lg-4 align-self-center shadow p-3 mb-5 bg-white rounded" id="greeting">
-          <p><img src="Portrait.jpeg" id="portrait" class="img-fluid" alt="portrait"></p>
-          <h1>Hi, I'm Chris. Nice to meet you!</h1>
+        <div class="col-lg-4" id="greeting">
+          <p><img src="Portrait1.jpeg" id="portrait" class="img-fluid" alt="portrait"></p>
+          <h1 id="intro"></h1>
         </div>
         <div class="col-lg-8" id="about-me">
           <h2 id="abt-me">About Me</h2>
@@ -63,21 +66,71 @@
           </p>
         </div>
       </div>
-      <!-- (In Progress)
+
       <div class="container" id="container-2">
         <div class="row">
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded px-22">
-            <p>Placeholder</p>
+          <div class="col" id="skills">
+            <h2>My Skills & Experience</h2>
           </div>
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded px-22">
-            <p>Placeholder</p>
+        </div>
+        <div class="row">
+          <div class="col shadow p-3 mb-5 bg-white rounded">
+            <h2>Languages</h2>
+            <ul>
+              <li>Python</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>HTML & CSS</li>
+            </ul>
           </div>
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded px-22">
-            <p>Placeholder</p>
+          <div class="col shadow p-3 mb-5 bg-white rounded">
+            <h2>Tools</h2>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Command Line</li>
+              <li>Mac & Windows OS</li>
+              <li>Microsoft Office Suite</li>
+          </div>
+          <div class="col-lg shadow p-3 mb-5 bg-white rounded">
+            <h2>Current Courses</h2>
+            <ul>
+              <li>Object Oriented Programming</li>
+              <li>Computer Organization & Architecture</li>
+              <li>Programming for the Internet Environment</li>
+              <li>Systems Analysis & Design</li>
+              <li>Python Programming</li>
+              <li>Statistics</li>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="projects">
+            <h2>Projects</h2>
+            <li><h4>This Homepage</h4></li>
+              <p>Built using HTML, CSS & JavaScript utilizing the Bootsrap CSS framework</p>
+            <li><h4>Monroe County Home Sale Analysis</h4></li>
+              <p>(In progress) Python data analysis project analysing the past three years of home sale data in
+                Monroe County.  Project utilizes the Pandas and Numpy frameworks to clean and analyze the data and
+                the scikit-learn library to create a model to predict home sale prices.  Goal is to achieve 85% accuracy
+                with the model and to create a website using the Django framework to allow users to get a predicted sale
+                price for their home.
+          </div>
+          <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="research">
+            <h2>History Research</h2>
+            <p>Read about my prior history reasearch! <br> (Click headings below to open) </p>
+            <ul>
+              <li>
+                <a href="https://drive.google.com/file/d/1I7gMoXFu1hHc1tho7VzUAzUozqYoMwwK/view?usp=sharing"><h4>Spectral Evidence In The Salem Witchcraft Crisis</h4></a>
+                <p> Examines the influence of spectral evidence in the Salem trials and its overall role in
+                  the causation of the Salem Witchcraft Crisis.
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/10d5MbRwc84om-SC2ek6LMDVG361rrBfh/view?usp=sharing"><h4>English Propaganda and Colonization, 1575-1750</h4></a>
+                <p> Examines the role of English propaganda in the colonization of North America.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      -->
     </div>
   </body>
 </html>
