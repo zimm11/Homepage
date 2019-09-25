@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Hello there, I'm Chris. Nice to meet you!"; /* The text */
+var txt = "Hi there, I'm Chris. Nice to meet you!"; /* The text */
 var speed = 60; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {

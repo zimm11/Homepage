@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS Style Sheet and JavaScript -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="photo-stylesheet.css">
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -35,12 +35,14 @@
       </div>
     </nav>
     <!-- Container with thumbnails of my photography, full size photos are opened in modal using JS script-->
-    <div class="container" id="photo-title">
-      <h1 id="photo">My Photography</h1>
-      <p>(Click on photos to enlarge)</p>
-    <div>
     <div class="container">
       <div class="row">
+        <div class="col" id="photo-title">
+          <h1>My Photography</h1>
+          <p>(Click on photos to enlarge)</p>
+        </div>
+      </div>
+      <div class="row" id="photo-row-1">
         <div class="col-lg">
           <a href="#" class="open">
             <picture>
@@ -66,88 +68,83 @@
           </a>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-          			<source srcset="images/badlands-small-1.jpeg">
-                <img src="images/badlands-1.jpeg" alt="Badlands National Park 1" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-          			<source srcset="images/badlands-small-2.jpeg">
-                <img src="images/badlands-2.jpeg" alt="Badlands National Park 2" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-          			<source srcset="images/badlands-small-3.jpeg">
-                <img src="images/badlands-3.jpeg" alt="Badlands National Park 3" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
+      <div class="row" id="photo-row-2">
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+        			<source srcset="images/badlands-small-1.jpeg">
+              <img src="images/badlands-1.jpeg" alt="Badlands National Park 1" class="img-thumbnail">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+        			<source srcset="images/badlands-small-2.jpeg">
+              <img src="images/badlands-2.jpeg" alt="Badlands National Park 2" class="img-thumbnail">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+        			<source srcset="images/badlands-small-3.jpeg">
+              <img src="images/badlands-3.jpeg" alt="Badlands National Park 3" class="img-thumbnail">
+            </picture>
+          </a>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-                <source srcset="images/highland-small-1.jpeg">
-                <img src="images/highland-1.jpeg" alt="Highland Park photo of flower 1" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-                <source srcset="images/highland-small-2.jpeg">
-                <img src="images/highland-2.jpeg" alt="Highland Park photo of flower 2" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-                <source srcset="images/highland-small-3.jpeg">
-                <img src="images/highland-3.jpeg" alt="Highland Park photo of flower 3" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
+
+      <div class="row" id="photo-row-3">
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+              <source srcset="images/highland-small-1.jpeg">
+              <img src="images/highland-1.jpeg" alt="Highland Park photo of flower 1" class="img-thumbnail">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+              <source srcset="images/highland-small-2.jpeg">
+              <img src="images/highland-2.jpeg" alt="Highland Park photo of flower 2" class="img-thumbnail">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+              <source srcset="images/highland-small-3.jpeg">
+              <img src="images/highland-3.jpeg" alt="Highland Park photo of flower 3" class="img-thumbnail">
+            </picture>
+          </a>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-                <source srcset="images/letchworth-small-1.jpeg">
-                <img src="images/letchworth-1.jpeg" alt="Picture of waterfall at Letchworth State Park" class="img-thumbnail">
-              </picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-          			<source srcset="images/pax-small-1.jpeg">
-          			<img src="images/pax-1.jpeg" alt="Photo of my dog Pax" class="img-thumbnail">
-          		</picture>
-            </a>
-          </div>
-          <div class="col-lg">
-            <a href="#" class="open">
-              <picture>
-          			<source srcset="images/cole-small-1.jpeg">
-          			<img src="images/cole-1.jpeg" alt="Photo of our family dog Cole" class="img-thumbnail">
-          		</picture>
-            </a>
-          </div>
+      <div class="row" id="photo-row-4">
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+              <source srcset="images/letchworth-small-1.jpeg">
+              <img src="images/letchworth-1.jpeg" alt="Picture of waterfall at Letchworth State Park" class="img-thumbnail">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+        			<source srcset="images/pax-small-1.jpeg">
+        			<img src="images/pax-1.jpeg" alt="Photo of my dog Pax" class="img-thumbnail">
+        		</picture>
+          </a>
+        </div>
+        <div class="col-lg">
+          <a href="#" class="open">
+            <picture>
+        			<source srcset="images/cole-small-1.jpeg">
+        			<img src="images/cole-1.jpeg" alt="Photo of our family dog Cole" class="img-thumbnail">
+        		</picture>
+          </a>
         </div>
       </div>
       <!-- Image Modal, JavaScript is set to enlarge photos on click-->
