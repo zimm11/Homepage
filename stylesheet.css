@@ -9,6 +9,13 @@ body {
     color: white;
 }
 
+#bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-shadow: 2px 2px black;
+}
+
 #main-container {
     margin-top: 3%;
 }
@@ -34,12 +41,6 @@ h2, h3, h4 {
     font-size: 18px;
 }
 
-#bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  text-shadow: 2px 2px black;
-}
 
 #greeting {
     text-align: center;
@@ -90,12 +91,16 @@ a {
         padding-top: 5%;
     }
 
+    #bottom-left {
+      display: none;
+    }
+
     #about-me, #projects, #research {
         padding-left: 3%;
         padding right: 3%;
     }
 
     #about-me {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 }
