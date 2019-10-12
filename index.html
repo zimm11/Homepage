@@ -18,12 +18,13 @@
     <script src="typed.js"></script>
   </head>
 
-  <body onload="typeWriter()">  <!-- Execute typed.js on page load -->
+  <body>
     <!-- Top header photo, click to direct to photography galler page -->
     <div class="container-fluid" id="banner">
       <a href="photography.html">
-        <img src="paris3.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Badlands National Park">
+        <img src="photos/paris3.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Badlands National Park">
       </a>
+      <h3 id="bottom-left">Chris Zimmerman - CIS Student at Buffalo State College</h3>
     </div>
     <!-- Navigation bar, set to top sticky -->
     <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-dark">
@@ -46,8 +47,10 @@
     <div class="container" id="main-container">
       <div class="row shadow p-3 mb-5 bg-white rounded" id="row-1">
         <div class="col-lg-4" id="greeting">
-          <p><img src="Portrait1.jpeg" id="portrait" class="img-fluid" alt="portrait"></p>
-          <h1 id="intro"></h1>
+          <img src="photos/Portrait1.jpeg" id="portrait" class="img-fluid" alt="portrait">
+          <br>
+          <br>
+          <h2 id="intro">Hi there, I'm Chris.</h2>
         </div>
         <div class="col-lg-8" id="about-me">
           <h2 id="abt-me">About Me</h2>
@@ -67,74 +70,77 @@
         </div>
       </div>
       <hr>
-      <div class="container" id="container-2">
-        <div class="row">
-          <div class="col shadow p-3 mb-5 bg-white rounded" id="skills">
-            <h2>My Skills & Experience</h2>
-          </div>
+      <div class="row">
+        <div class="col shadow p-3 mb-5 bg-white rounded" id="skills">
+          <h2>My Skills & Experience</h2>
         </div>
-        <div class="row">
-          <div class="col shadow p-3 mb-5 bg-white rounded">
-            <h2>Languages</h2>
-            <ul>
-              <li>Python</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>HTML & CSS</li>
-            </ul>
-          </div>
-          <div class="col shadow p-3 mb-5 bg-white rounded">
-            <h2>Tools</h2>
-            <ul>
-              <li>Git / GitHub</li>
-              <li>Command Line</li>
-              <li>Mac & Windows OS</li>
-              <li>Microsoft Office Suite</li>
-            </ul>
-          </div>
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded">
-            <h2>Current Courses</h2>
-            <ul>
-              <li>Object Oriented Programming</li>
-              <li>Computer Organization & Architecture</li>
-              <li>Programming for the Internet Environment</li>
-              <li>Systems Analysis & Design</li>
-              <li>Python Programming</li>
-              <li>Statistics</li>
-            </ul>
-          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col shadow p-3 mb-5 bg-white rounded">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML & CSS</li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="projects">
-            <h2>Projects</h2>
-            <ul>
-              <li><h4>This Homepage</h4>
-                Built using HTML, CSS & JavaScript utilizing the Bootsrap CSS framework
-              </li>
-              <li><h4>Monroe County Home Sale Analysis</h4>
-                (In progress) Python data analysis project analysing the past three years of home sale data in
-                Monroe County.  Project utilizes the Pandas and Numpy frameworks to clean and analyze the data and
-                the scikit-learn library to create a model to predict home sale prices.  Goal is to achieve 85% accuracy
-                with the model and to create a website using the Django framework to allow users to get a predicted sale
-                price for their home.
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="research">
-            <h2>History Research</h2>
-            <p>Read about my prior history reasearch! <br> (Click headings below to open) </p>
-            <ul>
-              <li>
-                <a href="https://drive.google.com/file/d/1I7gMoXFu1hHc1tho7VzUAzUozqYoMwwK/view?usp=sharing"><h4>Spectral Evidence In The Salem Witchcraft Crisis</h4></a>
-                Examines the influence of spectral evidence in the Salem trials and its overall role in
-                the causation of the Salem Witchcraft Crisis.
-              </li>
-              <li>
-                <a href="https://drive.google.com/file/d/10d5MbRwc84om-SC2ek6LMDVG361rrBfh/view?usp=sharing"><h4>English Propaganda and Colonization, 1575-1750</h4></a>
-                Examines the role of English propaganda in the colonization of North America.
-              </li>
-            </ul>
-          </div>
+        <div class="col shadow p-3 mb-5 bg-white rounded">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Command Line</li>
+            <li>Mac & Windows OS</li>
+            <li>Microsoft Office Suite</li>
+          </ul>
+        </div>
+        <div class="col-lg shadow p-3 mb-5 bg-white rounded">
+          <h3>Current Courses</h3>
+          <ul>
+            <li>Object Oriented Programming</li>
+            <li>Computer Organization & Architecture</li>
+            <li>Programming for the Internet Environment</li>
+            <li>Systems Analysis & Design</li>
+            <li>Python Programming</li>
+            <li>Statistics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="projects">
+          <h3>Projects</h3>
+          <br>
+          <ul>
+            <li><h4>This Homepage</h4>
+              Built using HTML, CSS & JavaScript utilizing the Bootsrap CSS framework
+            </li>
+            <br>
+            <li><h4>Monroe County Home Sale Analysis</h4>
+              (In progress) Python data analysis project analysing the past three years of home sale data in
+              Monroe County.  Project utilizes the Pandas and Numpy frameworks to clean and analyze the data and
+              the scikit-learn library to create a model to predict home sale prices.  Goal is to achieve 85% accuracy
+              with the model and to create a website using the Django framework to allow users to get a predicted sale
+              price for their home.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="research">
+          <h3>History Research</h3>
+          <p>Read about my prior history reasearch! <br> (Click headings below to open)</p>
+          <br>
+          <ul>
+            <li>
+              <a href="https://drive.google.com/file/d/1I7gMoXFu1hHc1tho7VzUAzUozqYoMwwK/view?usp=sharing"><h4>Spectral Evidence In The Salem Witchcraft Crisis</h4></a>
+              Examines the influence of spectral evidence in the Salem trials and its overall role in
+              the causation of the Salem Witchcraft Crisis.
+            </li>
+            <br>
+            <li>
+              <a href="https://drive.google.com/file/d/10d5MbRwc84om-SC2ek6LMDVG361rrBfh/view?usp=sharing"><h4>English Propaganda and Colonization, 1575-1750</h4></a>
+              Examines the role of English propaganda in the colonization of North America.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

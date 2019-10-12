@@ -4,6 +4,9 @@ body {
 
 #banner {
     padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 #main-container {
@@ -20,7 +23,7 @@ h2, h3, h4 {
 }
 
 .container {
-    font-family: Courier New, monospace;
+    /*font-family: Courier New, monospace;*/
     font-size: 18px;
     color: black;
 }
@@ -31,15 +34,18 @@ h2, h3, h4 {
     font-size: 18px;
 }
 
+#bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-shadow: 2px 2px black;
+}
+
 #greeting {
     text-align: center;
     font-size: 36px;
     padding-top: 11%;
     padding-right: 3%;
-}
-
-#skills {
-  text-align: center;
 }
 
 #portrait {
@@ -54,6 +60,14 @@ h2, h3, h4 {
 
 a {
     color: inherit;
+}
+
+#skills {
+  text-align: center;
+}
+
+.card-group {
+  width: 100%;
 }
 
 @media only screen and (max-width: 991px) {
