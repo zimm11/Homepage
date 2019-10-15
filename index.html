@@ -18,15 +18,16 @@
   </head>
 
   <body>
-    <!-- Top header photo, click to direct to photography galler page -->
+    <!-- Top header photo, click to direct to photography gallery page -->
     <div class="container-fluid" id="banner">
       <a href="photography.html">
-        <img src="photos/paris3.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Badlands National Park">
+        <img src="photos/paris3.jpeg" class="img-fluid" id="banner-photo" alt="Banner photo of Paris">
       </a>
       <h3 id="bottom-left">Chris Zimmerman - CIS Student at Buffalo State College</h3>
     </div>
+
     <!-- Navigation bar, set to top sticky -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark">
       <a class="navbar-brand" href="index.html">CZ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,17 +43,38 @@
         </div>
       </div>
     </nav>
+
+    <!-- Welcome alert -->
+		<div class="alert alert-secondary alert-dismissible fade show" role="alert" id="alert">
+		  <p>Hello there, I'm Chris.  Nice to meet you!  Feel free to <a href="mailto:cdzimm118@gmail.com" class="alert-link">contact</a> me to get to know me.</p>
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+
     <!-- Greeting and about me container, set to 4 and 8 columns -->
     <div class="container" id="main-container">
       <div class="row shadow p-3 mb-5 bg-white rounded" id="row-1">
         <div class="col-lg-4" id="greeting">
           <img src="photos/Portrait1.jpeg" id="portrait" class="img-fluid" alt="portrait">
           <br>
-          <br>
-          <h2 id="intro">Hi there, I'm Chris.</h2>
+          <!-- Homepage section sub-navigation -->
+          <ul class="nav flex-column" id="sub-nav">
+            <h4 id="learn">Chris Zimmerman</h4>
+            <li class="nav-item">
+               <a class="nav-link active" href="#skills">Skills & Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prior-work">Projects</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
         </div>
+        <!-- About Me -->
         <div class="col-lg-8" id="about-me">
-          <h2 id="abt-me">About Me</h2>
+          <h2 id="abt-me" class="rounded">About Me</h2>
           <p>Hello, my name is Chris - I am a current Computer Information Systems Student at Buffalo State College.
           This fall 2019 is my first semester back in school, I had previously graduated from SUNY Brockport with a B.S.
           degree with a double major in History and Political Science.  The past few years I have worked in the insurance industry
@@ -68,14 +90,10 @@
           </p>
         </div>
       </div>
-      <hr>
       <div class="row">
-        <div class="col shadow p-3 mb-5 bg-white rounded" id="skills">
+        <div class="col-12 shadow p-3 mb-5 rounded" id="skills">
           <h2>My Skills & Experience</h2>
         </div>
-      </div>
-
-      <div class="row">
         <div class="col shadow p-3 mb-5 bg-white rounded">
           <h3>Languages</h3>
           <ul>
@@ -107,6 +125,9 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-12 shadow p-3 mb-5 rounded" id="prior-work">
+          <h2>Projects and Prior Work</h2>
+        </div>
         <div class="col-lg shadow p-3 mb-5 bg-white rounded" id="projects">
           <h3>Projects</h3>
           <br>
@@ -142,6 +163,37 @@
           </ul>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-12 shadow p-3 mb-5 rounded" id="hobbies">
+          <h2>Hobbies</h2>
+        </div>
+        <!-- Card group listing my hobbies -->
+        <div class="card-group">
+          <div class="card">
+            <img src="images/soccer.jpg" class="card-img-top" alt="Photo of a soccer ball">
+            <div class="card-body">
+              <h5 class="card-title">Soccer</h5>
+            </div>
+          </div>
+          <div class="card">
+            <a href="photography.html">
+              <img src="images/photography.jpg" class="card-img-top" alt="Photo of a camera lens">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Photography</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/pax.jpg" class="card-img-top" alt="Photo of my dog Pax">
+            <div class="card-body">
+              <h5 class="card-title">Walking My Dog Pax</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <footer>
+      <p>&copy; Chris Zimmerman 2019</p>
+    </footer>
   </body>
 </html>
