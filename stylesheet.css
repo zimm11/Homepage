@@ -84,13 +84,13 @@ a {
     color: inherit;
 }
 
-#skills, #prior-work, #hobbies {
+#skills, #projects, #hobbies {
   text-align: center;
   background-color: #223440;
 }
 
-.card-group {
-  width: 100%;
+.card {
+  margin-bottom: 2%;
 }
 
 footer {
